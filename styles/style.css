@@ -1,0 +1,13 @@
+#header {
+    background-color: #22a53f;
+    color: white;
+}
+
+.timeMarker {
+    border-left: 6px solid red;
+    height: 500px;
+    position: relative;
+    left: 11%;
+    margin-left: -3px;
+    top: 10%;
+  }

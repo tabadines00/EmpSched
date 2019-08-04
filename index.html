@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="An updatable Scheduler">
+    <title>Timetable.js demo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/timetablejs.css">
+    <link rel="stylesheet" href="styles/demo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <!--User input for event creation-->
+
+    <input type="text" id="eName" placeholder="Event Name">
+
+    <select id='eLocation'>
+      <option value='Select'>Select Location...</option>
+    </select>
+
+    <input type="text" id="eStart" placeholder="Start Hour">
+    <input type="text" id="eStartMin">
+    <select id='eStartPer'>
+      <option value='AM'>AM</option>
+      <option value='PM'>PM</option>
+    </select>
+
+    <input type="text" id='eEnd' placeholder="End Hour">
+    <input type="text" id='eEndMin'>
+    <select id='eEndPer'>
+      <option value='AM'>AM</option>
+      <option value='PM'>PM</option>
+    </select>
+
+    <button id='submit' onclick='createAnEvent()'>Create</button>
+    <button id='add' onclick='addPerson()'>Add Person</button>
+
+    <!-- Header Jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid" id="header">
+        <div class="container">
+          <h1>The Timetable</h1>      
+          <p>A Timetable for all your scheduling needs.</p>
+        </div>
+      </div>
+
+    <div class="timetable"></div>
+
+    <!-- build:js scripts/timetable.js -->
+    <script src="scripts/timetable.js"></script>
+    <!-- endbuild -->
+
+    <!--my script-->
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
